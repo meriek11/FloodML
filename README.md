@@ -10,6 +10,14 @@ https://floodml.herokuapp.com/
 - run python app.py
 - You're Done!
 
+- First run: "conda create -n floodml_env python=3.8"
+- Then run: "conda activate floodml_env"
+- Then run: "pip install numpy==1.19.1 scikit-learn==0.23.1"
+- Then run: "pip install -r requirements.txt"
+- Then run: "python app.py"
+
+- Some Example :- Maharastra, Brazil, Indonesia etc.
+
 
 ## Inspiration
 Floods are one of the most dangerous and frequent natural disasters in the world.

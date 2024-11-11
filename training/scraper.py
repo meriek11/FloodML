@@ -5,7 +5,7 @@ def get_data(date, month, year, days, location):
     a = datetime.date(year, month, date)
     b = a - datetime.timedelta(days)
     
-    k = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/history?&aggregateHours=" + str(24 * days) + "&startDateTime=" + str(b) + "T00:00:00&endDateTime=" + str(a) + "T00:00:00&unitGroup=uk&contentType=json&dayStartTime=0:0:00&dayEndTime=0:0:00&location=" + location + ",India&key=QG54K69BV36JZ7G6FD46BBY57"
+    k = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/history?&aggregateHours=" + str(24 * days) + "&startDateTime=" + str(b) + "T00:00:00&endDateTime=" + str(a) + "T00:00:00&unitGroup=uk&contentType=json&dayStartTime=0:0:00&dayEndTime=0:0:00&location=" + location + ",India&key=ZXNVNABJFE8NUGPU56K2J8MAM"
     x = requests.get(k).json()['locations']
     
     for i in x:
